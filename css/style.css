@@ -10,9 +10,14 @@
   padding: 0%;
 }
 
+.body {
+  box-sizing: border-box;
+  display: flex;
+}
+
 .cabecalho {
   margin: 0.5% 15% 0% 15%;
-
+  display: flex;
 }
 
 .cabecalho__menu {
@@ -25,6 +30,7 @@
   height: auto;
   text-align: left;
   padding: 0% 0% 0.5% 0%;
+  display: flex;
 }
 
 .cabecalho__menu__link {
@@ -41,7 +47,9 @@
   margin: 0% 15% 0% 15%;
   align-items: center;
   justify-content: space-between;
-  gap: 82px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .corpo__imagem {
@@ -115,4 +123,23 @@
   font-family: var(--fonte);
   justify-content: center;
   margin-bottom: 1%;
+}
+
+@media (max-width: 1200px) {
+  .apresentacao {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  .cabeçalho {
+    padding: 10%;
+  }
+
+  .cabeçalho__menu {
+    justify-content: center;
+  }
+
+  .apresentacao__conteudo {
+    width: auto;
+  }
 }
