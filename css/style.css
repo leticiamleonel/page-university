@@ -8,11 +8,7 @@
 * {
   margin: 0%;
   padding: 0%;
-}
-
-.body {
   box-sizing: border-box;
-  display: flex;
 }
 
 .cabecalho {
@@ -126,12 +122,12 @@
 }
 
 @media (max-width: 1200px) {
-  .apresentacao {
+  .corpo {
     flex-direction: column-reverse;
     padding: 5%;
   }
 
-  .cabeçalho {
+  .cabecalho {
     padding: 10%;
   }
 
@@ -139,7 +135,26 @@
     justify-content: center;
   }
 
-  .apresentacao__conteudo {
+  .corpo__conteudo {
+    width: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .corpo {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  .cabecalho {
+    padding: 10%;
+  }
+
+  .cabeçalho__menu {
+    justify-content: center;
+  }
+
+  .corpo__conteudo {
     width: auto;
   }
 }
